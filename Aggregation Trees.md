@@ -5,12 +5,14 @@ Computing aggregation statistics on raw data is expensive as it involves visitin
 ## Input
 
 You will be given records in json format as follows:  
+```
 {  
     {"fname": “sam”, "bnum": "batch-1", "os": “iOS”,   "pr": 23},  
     {"fname": “john”, "bnum": "batch-2", "os": “iOS”,   "pr": 14},  
     {"fname": “sam”, "bnum": "batch-2", "os": “win”,   "pr": 15},  
     {"fname": “sam”, "bnum": "batch-1", "os": “linux”, "pr": 22},  
-  }
+}
+```
 
 ## Output
 
