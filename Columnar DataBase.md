@@ -4,6 +4,7 @@ Implement a columnar database.The database runs as a HTTP server that receives e
 
 ## Input
 
+```
 PUT /elastic/\_bulk  
 {  
     {"c1": 123, "c2": "txt1", "c3": 1.23, "c4": "txt2", "c5": 12},  
@@ -13,6 +14,7 @@ PUT /elastic/\_bulk
     {"c1": 121, "c2": "txt9", "c3": 1.21, "c5": 90},  
     {"c1": 314, "c2": "txt11", "c3": 3.14, "c4": "txt12"}  
 }
+```
 
 ## Modules:
 
@@ -21,6 +23,7 @@ PUT /elastic/\_bulk
 A dir with following files created  
 c1.tlv, c2.tlv, c3.tlv, c4.tlv, c5.tlv,  ….cN.tlv 
 
+```
 c1.tlv  
 11123  
 12456  
@@ -28,6 +31,7 @@ c1.tlv
 1???  
 11121  
 12314
+```
 
 ## Testing:
 
@@ -35,6 +39,7 @@ Use this tool to send the data to your columnar DB:
 [https://github.com/siglens/siglens/tree/develop/tools/sigclient\#es-bulk](https://github.com/siglens/siglens/tree/develop/tools/sigclient#es-bulk) OR you can use your own tool or pick some from the web.  
 If you pick the above tool, it will send data in following format:
 
+```
 PUT /elastic/\_bulk  
 {  
     "{"index": {"\_index": "myidx", "\_type": "\_doc"}}, \#\# Action Line  
@@ -49,5 +54,6 @@ PUT /elastic/\_bulk
     {"c1": 121, "c2": "txt9", "c3": 1.21, "c4": "txt10", "c5": 90},  
     "{"index": {"\_index": "myidx", "\_type": "\_doc"}},  \#\# Action Line  
     {"c1": 314, "c2": "txt11", "c3": 3.14, "c4": "txt12", "c5": 112}  
-}  
+}
+```
 The Action line can be ignored in your columnar DB
