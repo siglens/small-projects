@@ -10,17 +10,18 @@ The Scalable Alert Notification System is designed to handle the evaluation and 
 
 Alerts are stored in a database or file and follow this structure:
 
-`{`  
-  `"id1": {`  
-    `"interval": 1 to 60000,  // Evaluation interval in minutes`  
-    `"metric_query": "-1h:now:some_me_name:avg", // Query for metric data`  
-    `"condition_operator": ">",  // Comparison operator`  
-    `"condition_value": some_number  // Threshold for the condition`  
-  `},`  
-  `"id2": {`  
-    `...`  
-  `}`  
-`}`
+```{  
+  "id1": {
+     "interval": 1 to 60000,  // Evaluation interval in minutes
+     "metric_query": "-1h:now:some_me_name:avg", // Query for metric data
+     "condition_operator": ">",  // Comparison operator
+     "condition_value": some_number  // Threshold for the condition
+  },
+  "id2": {
+      ... 
+  }  
+}
+```
 
 ---
 
