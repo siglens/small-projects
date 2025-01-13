@@ -35,7 +35,7 @@ The **auto-rollup** functionality aggregates all data points within the same clo
 
 A single entry per metric-tag combination per hour:
 
-`metricName:{tagKey1:tagVal1, tagKey2:tagVal2,...} sum:<value> count:<value> min:<value> max:<value> <hourStartTimestamp>`  
+```metricName:{tagKey1:tagVal1, tagKey2:tagVal2,...} sum:<value> count:<value> min:<value> max:<value> <hourStartTimestamp>```
 ---
 
 #### **Implementation Plan**
