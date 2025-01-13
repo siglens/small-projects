@@ -22,4 +22,4 @@ You will be given records in json format as follows:
 4. The expected value for each of the above groupby column is shown in below diagram.
 
 ## Aggregation Tree
-[aggtree-img.pdf](https://github.com/user-attachments/files/18402090/aggtree-img.pdf)
+[aggtree-img.pdf](./aggtree-img.pdf)
